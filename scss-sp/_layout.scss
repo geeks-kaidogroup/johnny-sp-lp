@@ -1,0 +1,316 @@
+@charset "utf-8";
+// ============================
+// 共通パーツ読み込み
+// ============================
+@import "_core";
+
+// ============================
+// 共通要素
+// ============================
+/*==============================
+共通要素
+==============================*/
+.wrap {
+	@include wrap($value:600px);
+}
+
+
+// ============================
+// l-header
+// ============================
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+	@include wrap($value:640px);
+	display:table;
+	height:137px;
+	padding:10px 0 0 0;
+	background:url(assets/img/layout/header/header_bg.png) no-repeat top center;
+	.header-logo {
+		display:table-cell;
+		vertical-align:top;
+	}
+	.header-tel {
+		display:table-cell;
+	}
+}
+
+// ============================
+// l-mv
+// ============================
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+	@include wrap($value:640px);
+}
+
+// ============================
+// l-contents
+// ============================
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+	@include wrap($value:640px);
+}
+.btn-app {
+	@include wrap($value:600px);
+	padding:0 0 30px 0;
+}
+.youtube {
+	width:495px;
+	margin:20px auto 40px auto;
+}
+.menu-area {
+	padding:53px 0 20px 20px;
+	background:url(assets/img/top/menu.png) no-repeat top center;
+	li {
+		float:left;
+		margin:0 20px 10px 0;
+	}
+}
+.syouhin-1 {
+	padding:40px 0 40px 0;
+	.syouhin-1-bottom {
+		font-size:21px;
+		line-height:1.5;
+		.right {
+			text-align: right;
+		}
+		.red {
+			color: red;
+		}
+		.spacing {
+			letter-spacing:-0.08em;
+		}
+	}
+}
+.acc-box {
+	dd {
+		display: none;
+		padding:30px 0 30px 0;
+		text-align:center;
+		background:#eaeaea;
+		.img-area {
+			img {
+				display:block;
+				width:600px;
+				margin:0 auto 30px auto;
+			}
+		}
+		.btn-close-square {
+			width:328px;
+			margin:0 auto;
+		}
+	}
+}
+.record {
+	dt {
+		height:130px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 570px 40px ,url(assets/img/top/performance_02.png) no-repeat top center;
+	}
+}
+.record {
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 570px 40px ,url(assets/img/top/performance_02.png) no-repeat top center;
+	}
+}
+.category {
+	.accordion {
+		margin:0 0 30px 0;
+	}
+}
+.category-headline {
+	margin:0 0 40px 0;
+}
+.product-list {
+	@include wrap($value:600px);
+	dd {
+		display:none;
+		border-right:solid 2px #ccc;
+		border-bottom:solid 2px #ccc;
+		border-left:solid 2px #ccc;
+	}
+}
+.list-retro {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/retro.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/retro.png) no-repeat top center;
+	}
+}
+.list-figure {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/figure.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/figure.png) no-repeat top center;
+	}
+}
+.list-girl {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/girl.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/girl.png) no-repeat top center;
+	}
+}
+.list-doll {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/doll.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/doll.png) no-repeat top center;
+	}
+}
+.list-model {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/model.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/model.png) no-repeat top center;
+	}
+}
+.list-minicar {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/minicar.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/minicar.png) no-repeat top center;
+	}
+}
+.list-rail {
+	dt {
+		height:114px;
+		background:url(assets/img/btn/btn_open.png) no-repeat 520px 27px ,url(assets/img/top/rail.png) no-repeat top center;
+	}
+	dt.open {
+		background:url(assets/img/btn/btn_close.png) no-repeat 520px 27px ,url(assets/img/top/rail.png) no-repeat top center;
+	}
+}
+.tab-area {
+	@include wrap($value:600px);
+}
+
+.tab {
+	overflow:hidden;
+}
+.tab {
+	li {
+		float:left;
+		width:197px;
+		height:103px;
+		margin-right:3px;
+		text-indent:-9999px;
+	}
+	.tab01 {
+		background:url(assets/img/btn/tab_assessment_deli_off.png) no-repeat;
+	}
+	.tab02 {
+		background:url(assets/img/btn/tab_assessment_off.png) no-repeat;
+	}
+	.tab03 {
+		background:url(assets/img/btn/tab_first_off.png) no-repeat;
+	}
+}
+.tab {
+	.tab01.select {
+		background:url(assets/img/btn/tab_assessment_deli_on.png) no-repeat;
+	}
+	.tab02.select {
+		background:url(assets/img/btn/tab_assessment_on.png) no-repeat;
+	}
+	.tab03.select {
+		background:url(assets/img/btn/tab_first_on.png) no-repeat;
+	}
+}
+.content li {
+	border:solid 2px #ccc;
+	img {
+		vertical-align:bottom;
+	}
+}
+.hide {
+	display:none;
+}
+.btn-shamail {
+	width:505px;
+	margin:30px auto 0 auto;
+}
+.btn-line {
+	width:543px;
+	margin:0 auto 30px auto;
+}
+.btn-assessment-deli {
+	width:506px;
+	margin:35px auto 30px auto;
+}
+
+.voice-area {
+	background:url(assets/img/top/voice_bd.png) repeat-y;
+	.voice {
+		@include wrap($value:600px);
+		li {
+			position:relative;
+			float:left;
+			width:276px;
+			margin:0 20px 83px 0;
+			.kakudai {
+				position: absolute;
+				bottom: -25px;
+				right: 36px;
+				width: 200px;
+				height: 56px;
+			}
+		}
+	}
+}
+.form-area {
+	margin:0 0 35px 0;
+	padding:235px 0 10px 35px;
+	background:url(assets/img/top/form_bg.png) no-repeat top center;
+	li {
+		margin:0 0 25px 0;
+	}
+}
+.btn-hp {
+	width:568px;
+	margin:0 auto 35px auto;
+}
+
+
+// ============================
+// l-footer
+// ============================
+/*==============================
+フッター
+==============================*/
+.l-footer {
+	@include wrap($value:640px);
+	padding:0 0 110px 0;
+	.pageTop {
+		position:relative;
+		ul {
+			position: fixed;
+			bottom: 0px;
+
+			li {
+				float:left;
+			}
+		}
+		.btn-delivery {
+			margin:26px 0 0 0;
+			width:500px;
+			text-align:center;
+		}
+	}
+}

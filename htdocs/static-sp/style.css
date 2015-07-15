@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* General */
+.float-list, .cf {
+  *zoom: 1;
+}
+.float-list:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-size: 24px;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+.wrap {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+  width: 640px;
+  margin: 0 auto;
+  display: table;
+  height: 137px;
+  padding: 10px 0 0 0;
+  background: url(assets/img/layout/header/header_bg.png) no-repeat top center;
+}
+.l-header .header-logo {
+  display: table-cell;
+  vertical-align: top;
+}
+.l-header .header-tel {
+  display: table-cell;
+}
+
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.btn-app {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+}
+
+.youtube {
+  width: 495px;
+  margin: 20px auto 40px auto;
+}
+
+.menu-area {
+  padding: 53px 0 20px 20px;
+  background: url(assets/img/top/menu.png) no-repeat top center;
+}
+.menu-area li {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+.syouhin-1 {
+  padding: 40px 0 40px 0;
+}
+.syouhin-1 .syouhin-1-bottom {
+  font-size: 21px;
+  line-height: 1.5;
+}
+.syouhin-1 .syouhin-1-bottom .right {
+  text-align: right;
+}
+.syouhin-1 .syouhin-1-bottom .red {
+  color: red;
+}
+.syouhin-1 .syouhin-1-bottom .spacing {
+  letter-spacing: -0.08em;
+}
+
+.acc-box dd {
+  display: none;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  background: #eaeaea;
+}
+.acc-box dd .img-area img {
+  display: block;
+  width: 600px;
+  margin: 0 auto 30px auto;
+}
+.acc-box dd .btn-close-square {
+  width: 328px;
+  margin: 0 auto;
+}
+
+.record dt {
+  height: 130px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 570px 40px, url(assets/img/top/performance_02.png) no-repeat top center;
+}
+
+.record dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 570px 40px, url(assets/img/top/performance_02.png) no-repeat top center;
+}
+
+.category .accordion {
+  margin: 0 0 30px 0;
+}
+
+.category-headline {
+  margin: 0 0 40px 0;
+}
+
+.product-list {
+  width: 600px;
+  margin: 0 auto;
+}
+.product-list dd {
+  display: none;
+  border-right: solid 2px #ccc;
+  border-bottom: solid 2px #ccc;
+  border-left: solid 2px #ccc;
+}
+
+.list-retro dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/retro.png) no-repeat top center;
+}
+.list-retro dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/retro.png) no-repeat top center;
+}
+
+.list-figure dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/figure.png) no-repeat top center;
+}
+.list-figure dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/figure.png) no-repeat top center;
+}
+
+.list-girl dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/girl.png) no-repeat top center;
+}
+.list-girl dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/girl.png) no-repeat top center;
+}
+
+.list-doll dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/doll.png) no-repeat top center;
+}
+.list-doll dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/doll.png) no-repeat top center;
+}
+
+.list-model dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/model.png) no-repeat top center;
+}
+.list-model dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/model.png) no-repeat top center;
+}
+
+.list-minicar dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/minicar.png) no-repeat top center;
+}
+.list-minicar dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/minicar.png) no-repeat top center;
+}
+
+.list-rail dt {
+  height: 114px;
+  background: url(assets/img/btn/btn_open.png) no-repeat 520px 27px, url(assets/img/top/rail.png) no-repeat top center;
+}
+.list-rail dt.open {
+  background: url(assets/img/btn/btn_close.png) no-repeat 520px 27px, url(assets/img/top/rail.png) no-repeat top center;
+}
+
+.tab-area {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab li {
+  float: left;
+  width: 197px;
+  height: 103px;
+  margin-right: 3px;
+  text-indent: -9999px;
+}
+.tab .tab01 {
+  background: url(assets/img/btn/tab_assessment_deli_off.png) no-repeat;
+}
+.tab .tab02 {
+  background: url(assets/img/btn/tab_assessment_off.png) no-repeat;
+}
+.tab .tab03 {
+  background: url(assets/img/btn/tab_first_off.png) no-repeat;
+}
+
+.tab .tab01.select {
+  background: url(assets/img/btn/tab_assessment_deli_on.png) no-repeat;
+}
+.tab .tab02.select {
+  background: url(assets/img/btn/tab_assessment_on.png) no-repeat;
+}
+.tab .tab03.select {
+  background: url(assets/img/btn/tab_first_on.png) no-repeat;
+}
+
+.content li {
+  border: solid 2px #ccc;
+}
+.content li img {
+  vertical-align: bottom;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-shamail {
+  width: 505px;
+  margin: 30px auto 0 auto;
+}
+
+.btn-line {
+  width: 543px;
+  margin: 0 auto 30px auto;
+}
+
+.btn-assessment-deli {
+  width: 506px;
+  margin: 35px auto 30px auto;
+}
+
+.voice-area {
+  background: url(assets/img/top/voice_bd.png) repeat-y;
+}
+.voice-area .voice {
+  width: 600px;
+  margin: 0 auto;
+}
+.voice-area .voice li {
+  position: relative;
+  float: left;
+  width: 276px;
+  margin: 0 20px 83px 0;
+}
+.voice-area .voice li .kakudai {
+  position: absolute;
+  bottom: -25px;
+  right: 36px;
+  width: 200px;
+  height: 56px;
+}
+
+.form-area {
+  margin: 0 0 35px 0;
+  padding: 235px 0 10px 35px;
+  background: url(assets/img/top/form_bg.png) no-repeat top center;
+}
+.form-area li {
+  margin: 0 0 25px 0;
+}
+
+.btn-hp {
+  width: 568px;
+  margin: 0 auto 35px auto;
+}
+
+/*==============================
+フッター
+==============================*/
+.l-footer {
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 0 110px 0;
+}
+.l-footer .pageTop {
+  position: relative;
+}
+.l-footer .pageTop ul {
+  position: fixed;
+  bottom: 0px;
+}
+.l-footer .pageTop ul li {
+  float: left;
+}
+.l-footer .pageTop .btn-delivery {
+  margin: 26px 0 0 0;
+  width: 500px;
+  text-align: center;
+}
